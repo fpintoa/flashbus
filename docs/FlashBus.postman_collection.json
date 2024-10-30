@@ -919,9 +919,15 @@
 					"name": "Direções",
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "authorization",
+								"value": "5b3ce3597851110001cf6248d94a3a686a8f4ea285d4f1ec70590f1d",
+								"type": "text"
+							}
+						],
 						"url": {
-							"raw": "https://api.openrouteservice.org/v2/directions/driving-car?api_key=5b3ce3597851110001cf6248d94a3a686a8f4ea285d4f1ec70590f1d&start=8.681495,49.41461&end=8.687872,49.420318",
+							"raw": "https://api.openrouteservice.org/v2/directions/driving-car?start=8.681495,49.41461&end=8.687872,49.420318",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -934,10 +940,6 @@
 								"driving-car"
 							],
 							"query": [
-								{
-									"key": "api_key",
-									"value": "5b3ce3597851110001cf6248d94a3a686a8f4ea285d4f1ec70590f1d"
-								},
 								{
 									"key": "start",
 									"value": "8.681495,49.41461"
